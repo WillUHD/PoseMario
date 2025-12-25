@@ -14,6 +14,8 @@
 > 
 > (it  works, but I won't be touching it, so feel free to pr if you have a fix)
 
+(make sure you've `cd`'d into the src directory!)
+
 ---
 
 ### Dependencies
@@ -34,7 +36,7 @@ pip install 'absl-py==2.3.1' 'attrs==25.4.0' 'certifi==2025.11.12' 'cffi==2.0.0'
   
   1. Unzip the app either in Finder or by executing this command: 
       ```
-      unzip ./mari0_ae.app.zip
+      unzip ./mari0_ae.zip
       ```
   
   2. The app should be runnable (by Right Click > `Open`, or by disabling gatekeeper). 
