@@ -4,8 +4,9 @@
 
 <h1>PoseMario</h1>
 
-![python](https://img.shields.io/badge/python-ffffff?logo=python)
+![python](https://img.shields.io/badge/python3.11-ffffff?logo=python)
 ![mediapipe](https://img.shields.io/badge/mediapipe-011e3d?logo=mediapipe)
+![opencv](https://img.shields.io/badge/opencv-blue?logo=opencv)
 ![mac](https://img.shields.io/badge/macOS-000000?logo=apple)
 ![deprecated](https://img.shields.io/badge/⚠️DEPRECATED!-secretMessage!!!?color=orange)
 
