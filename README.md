@@ -7,6 +7,7 @@
 ![java25](https://img.shields.io/badge/java25-ED8B00?&logo=openjdk&logoColor=white)
 ![maven](https://img.shields.io/badge/mvn-4fa4ff?logo=apachemaven)
 ![onnxruntime](https://img.shields.io/badge/onnxruntime-3d251e?logo=onnx)
+![opencv](https://img.shields.io/badge/opencv-blue?logo=opencv)
 ![mac](https://img.shields.io/badge/macOS-000000?logo=apple)
 
 (this is meant to be run on JDK 25 (LTS). make sure you've `cd`'d into the src directory!)
