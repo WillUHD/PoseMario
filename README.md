@@ -70,5 +70,6 @@ pip install 'absl-py==2.3.1' 'attrs==25.4.0' 'certifi==2025.11.12' 'cffi==2.0.0'
   - Seeing logs from MediaPipe before the UI opens is normal. 
     - Press `p` to pause the app, and `p` again to resume it in 3 seconds. This is useful when setting up mari0_ae without keys pressing accidentally. 
     - Press `q` to quit the app. 
-  - Note that having the UI not respond to `p`, `q`, or a resize is just a common issue from opencv's imshow. If you're really impatient, you can just `^C` in the terminal or force quit Python. 
+  - Note that having the UI not respond to `p`, `q`, or a resize is just a common issue from opencv's imshow. If you're really impatient, you can just `^C` in the terminal or force quit Python.
+  - The app does come with a watermark by default! You can delete the watermark (`rm ./watermark.png`) or replace it with your own. 
 </details>
