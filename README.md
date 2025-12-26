@@ -10,7 +10,10 @@
 ![opencv](https://img.shields.io/badge/opencv-blue?logo=opencv)
 ![mac](https://img.shields.io/badge/macOS-000000?logo=apple)
 
-(this is meant to be run on JDK 25 (LTS). make sure you've `cd`'d into the src directory!)
+> [!note]
+> This runs in JDK25! 
+
+(make sure you've `cd`'d into the src directory!)
 
 ---
 
