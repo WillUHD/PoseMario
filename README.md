@@ -11,9 +11,11 @@
 ![deprecated](https://img.shields.io/badge/⚠️DEPRECATED!-secretMessage!!!?color=orange)
 
 > [!warning]
-> This branch is **deprecated** and no longer actively maintained!!
+> This branch is **deprecated** and no longer actively maintained!! 
 > 
-> (it  works, but I won't be touching it, so feel free to pr if you have a fix)
+> (it works, but I won't be touching it, so feel free to pr if you have a fix)
+>
+> refer to the [main branch](https://github.com/WillUHD/PoseMario) written in java for the latest updates.
 
 (make sure you've `cd`'d into the src directory!)
 
