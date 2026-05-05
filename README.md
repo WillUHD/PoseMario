@@ -12,7 +12,6 @@
 ---
 
 ### Dependencies
-
 Execute this command to install from requirements: 
 ```
 pip install -r ./requirements.txt
@@ -26,44 +25,45 @@ pip install 'absl-py==2.3.1' 'attrs==25.4.0' 'certifi==2025.11.12' 'cffi==2.0.0'
 ---
 
 ### Installing `mari0_ae.app`
-  
-  This is the only app I found that runs the classic SMB on Mac while being efficient. Several other apps either run on Vulkan and destroy the GPU, or only work on Apple silicon. 
-  
-  1. Unzip the app either in Finder or by executing this command: 
-      ```
-      unzip ./mari0_ae.zip
-      ```
-  
-  2. The app should be runnable (by Right Click > `Open`, or by disabling gatekeeper). 
-  
-     > If it's not runnable, download it from the original source [here](https://www.dropbox.com/scl/fi/94eehbjlx8x4p8xc2regz/alesan99s_entities_13.2_macos.zip?rlkey=hnb24ajfjuuf3mb37c8sgbdsv&e=1&st=ftjzlc3o&dl=).
-  
-  4. Make sure the title is `Mari0: AE` and it says `MOD BY ALESAN99` at the bottom right once run.
-  5. This app is modded with a portal gun. Unless you plan on playing like that, we have to change it back by enabling cheats. 
-      
-      1. Check if the options file exists in the first place through this command:
-         ```
-         [ -f ~/Library/Application\ Support/mari0/alesans_entities/options.txt ] && echo "File exists" || echo "Run mari0_ae.app"
-         ```
-         (If it doesn't exist, you have to run the app first)
-      2. Change the contents of the options by running this command (this uses PoseMario's keybinds and enables cheats)
-         ```
-         echo -n "playercontrols:1:aimx-,aimy-,portal1-,left-a,up-w,right-d,down-s,run-r,pause-,jump- ,portal2-,reload-z,use-x;scale:2;letterbox:true;volume:0;vsync;gamefinished;reachedworlds:smb:1,1,1,1,1,1,1,1;resizable:true;language:english;" > ~/Library/Application\ Support/mari0/alesans_entities/options.txt
-         ```
-  6. Verify that you can indeed use cheats in the app by going to `OPTIONS` and scrolling to `CHEATS` in the menu.
-  
-     Every time you run the app, if you want PoseMario to be "playable" (in my opinion), you have to switch the mode to `CLASSIC` and turn on `INFINITE TIME` and `INFINITE LIVES`. Playing Mario with pose isn't easy!
-  
-      <img width="400" height="244" alt="image" src="https://github.com/user-attachments/assets/50cbdb38-e613-4148-9fc4-d0034f5efb46" />
-  
-      > use the arrow keys to navigate the menu
+This is the only app I found that runs the classic SMB on Mac while being efficient. Several other apps either run on Vulkan and destroy the GPU, or only work on Apple silicon. 
+
+1. Unzip the app either in Finder or by executing this command: 
+    ```
+    unzip ./mari0_ae.zip
+    ```
+
+2. The app should be runnable (by Right Click > `Open`, or by disabling gatekeeper). 
+
+   > If it's not runnable, download it from the original source [here](https://www.dropbox.com/scl/fi/94eehbjlx8x4p8xc2regz/alesan99s_entities_13.2_macos.zip?rlkey=hnb24ajfjuuf3mb37c8sgbdsv&e=1&st=ftjzlc3o&dl=).
+
+4. Make sure the title is `Mari0: AE` and it says `MOD BY ALESAN99` at the bottom right once run.
+5. This app is modded with a portal gun. Unless you plan on playing like that, we have to change it back by enabling cheats. 
+    
+    1. Check if the options file exists in the first place through this command:
+       ```
+       [ -f ~/Library/Application\ Support/mari0/alesans_entities/options.txt ] && echo "File exists" || echo "Run mari0_ae.app"
+       ```
+       (If it doesn't exist, you have to run the app first)
+    2. Change the contents of the options by running this command (this uses PoseMario's keybinds and enables cheats)
+       ```
+       echo -n "playercontrols:1:aimx-,aimy-,portal1-,left-a,up-w,right-d,down-s,run-r,pause-,jump- ,portal2-,reload-z,use-x;scale:2;letterbox:true;volume:0;vsync;gamefinished;reachedworlds:smb:1,1,1,1,1,1,1,1;resizable:true;language:english;" > ~/Library/Application\ Support/mari0/alesans_entities/options.txt
+       ```
+6. Verify that you can indeed use cheats in the app by going to `OPTIONS` and scrolling to `CHEATS` in the menu.
+
+   Every time you run the app, if you want PoseMario to be "playable" (in my opinion), you have to switch the mode to `CLASSIC` and turn on `INFINITE TIME` and `INFINITE LIVES`. Playing Mario with pose isn't easy!
+
+    <img width="400" height="244" alt="image" src="https://github.com/user-attachments/assets/50cbdb38-e613-4148-9fc4-d0034f5efb46" />
+
+    > use the arrow keys to navigate the menu
 
 ### Running the code
-  
-  - You may have to enable accessibility settings for your IDE (eg. Code) because PyAutoGUI has to use them to control the keyboard. 
-  - Run the app via `python ./MarioController2.py`
-  - Seeing logs from MediaPipe before the UI opens is normal. 
-    - Press `p` to pause the app, and `p` again to resume it in 3 seconds. This is useful when setting up mari0_ae without keys pressing accidentally. 
-    - Press `q` to quit the app. 
-  - Note that having the UI not respond to `p`, `q`, or a resize is just a common issue from opencv's imshow. If you're really impatient, you can just `^C` in the terminal or force quit Python.
-  - The app does come with a watermark by default! You can delete the watermark (`rm ./watermark.png`) or replace it with your own. 
+- You may have to enable accessibility settings for your IDE (eg. Code) because PyAutoGUI has to use them to control the keyboard. 
+- Run the app via `python ./MarioController2.py`
+- Seeing logs from MediaPipe before the UI opens is normal. 
+  - Press `p` to pause the app, and `p` again to resume it in 3 seconds. This is useful when setting up mari0_ae without keys pressing accidentally. 
+  - Press `q` to quit the app. 
+- Note that having the UI not respond to `p`, `q`, or a resize is just a common issue from opencv's imshow. If you're really impatient, you can just `^C` in the terminal or force quit Python.
+- The app does come with a watermark by default! You can delete the watermark (`rm ./watermark.png`) or replace it with your own. 
+
+### Previous versions
+Visit [here](https://github.com/WillUHD/WillUHD/tree/main/posemario) for previous versions of PoseMario, written in Java
