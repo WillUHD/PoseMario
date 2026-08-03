@@ -17,3 +17,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 *.icloud
+
+# project specific
+.venv
