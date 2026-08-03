@@ -5,7 +5,7 @@ from mediapipe.tasks.python import vision
 
 # --- Configuration & Constants ---
 pyautogui.PAUSE = 0 
-MODEL_FILE      = "pose_landmarker_full.task"  # adjust lite/full/heavy based on hardware
+MODEL_FILE      = "models/pose_landmarker_full.task"  # adjust lite/full/heavy based on hardware
 WEBCAM_INDEX    = 0
 CONFIDENCE      = 0.7
 INFERENCE_WIDTH = 480
